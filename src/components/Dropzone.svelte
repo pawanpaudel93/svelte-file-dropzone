@@ -18,6 +18,7 @@
    * See https://github.com/okonet/attr-accept for more information.
    */
   export let accept; // string or string[]
+  export let directory;
   export let disabled = false;
   export let getFilesFromEvent = fromEvent;
   export let maxSize = Infinity;
@@ -359,6 +360,9 @@
     on:click={onInputElementClick}
     bind:this={inputElement}
     style="display: none;"
+    webkitdirectory={directory}
+    directory={directory}
+    mozdirectory={directory}
   />
   <slot>
     <p>Drag 'n' drop some files here, or click to select files</p>

@@ -12,11 +12,11 @@ SvelteJS component for file upload and dropzone.The component is Svelte implemen
 ## Installation
 
 ```
-npm install svelte-file-dropzone
+npm install git+https://github.com/pawanpaudel93/svelte-file-dropzone.git
 
 or
 
-yarn add svelte-file-dropzone
+yarn add git+https://github.com/pawanpaudel93/svelte-file-dropzone.git
 ```
 
 ## Usage
@@ -65,6 +65,7 @@ yarn add svelte-file-dropzone
 | disableDefaultStyles  | don't apply default styles to container                                                  | false         |
 | inputElement          | reference to inputElement                                                                | undefined     |
 | required              | html5 required attribute added to input                                                  | false         |
+| directory             | input element should let the user select directories instead of files.                   | undefined     |
 
 ### Events
 
